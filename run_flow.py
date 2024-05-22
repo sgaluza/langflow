@@ -19,4 +19,3 @@ if __name__ == "__main__":
     logging.info("Starting run_flow.py")
     run_flow()
     logging.info("Finished run_flow.py")
-
