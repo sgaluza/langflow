@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #182f25; /* Цвет фона */
+            color: white; /* Цвет текста */
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Заголовок страницы</h1>
+    </header>
+    <div class="content">
+        <p>Это основное содержимое страницы.</p>
+    </div>
+    <footer>
+        <p>Футер страницы</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@main/dist/build/static/js/bundle.min.js"></script>
+
+    <!-- chat_inputs: Stringified JSON with all the input keys and its values. The value of the key that is defined
+    as chat_input_field will be overwritten by the chat message.
+    chat_input_field: Input key that you want the chat to send the user message with. -->
+    <langflow-chat
+      window_title="Upwork Estimation"
+      flow_id="7e0c0db9-ba69-4b90-a4a7-0f197b338d93"
+      chat_inputs='{"input":""}'
+      chat_input_field="input"
+      host_url="http://localhost:7860"
+    ></langflow-chat>
+</body>
+</html>
