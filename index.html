@@ -58,8 +58,19 @@
         ></langflow-chat>
     </div>
     <footer>
-        <p>Футер страницы</p>
+        <p>Symfa.com R&D</p>
     </footer>
     <script defer src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@main/dist/build/static/js/bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const chatElement = document.querySelector("langflow-chat");
+            if (!chatElement) {
+                console.error("Chat element not found");
+            } else {
+                console.log("Chat element loaded successfully");
+            }
+        });
+    </script>
 </body>
 </html>
+
